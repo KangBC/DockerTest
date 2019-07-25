@@ -8,11 +8,11 @@ import config from './core/config/config.dev';
 import userRouter from './routes/user';
 
 const port = config.serverPort;
-// logger.stream = {
-//   write(message, encoding) {
-//     logger.info(message);
-//   }
-// };
+logger.stream = {
+  write(message, encoding) {
+    logger.info(message);
+  }
+};
 
 // connectToDb();
 
