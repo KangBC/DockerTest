@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(morgan('dev', { stream: logger.stream }));
 
-app.use('/user', userRouter);
+// app.use('/user', userRouter);
 
 // Index route
 app.get('/', (req, res) => {
