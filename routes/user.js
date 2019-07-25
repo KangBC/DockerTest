@@ -9,7 +9,7 @@ import { AddUserValidation, LoginValidation } from '../models/Validations';
 const router = express.Router();
 
 // User Info
-router.get('/', verifyToken, (req, res) => {
+router.get('/aa', verifyToken, (req, res) => {
   res.send('user!!');
 });
 
